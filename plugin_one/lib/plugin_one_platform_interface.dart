@@ -23,7 +23,7 @@ abstract class PluginOnePlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
+  Future<String?> getCard() {
+    throw UnimplementedError('getCard() has not been implemented.');
   }
 }

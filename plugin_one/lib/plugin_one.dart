@@ -8,7 +8,7 @@
 import 'plugin_one_platform_interface.dart';
 
 class PluginOne {
-  Future<String?> getPlatformVersion() {
-    return PluginOnePlatform.instance.getPlatformVersion();
+  Future<String?> getCard() {
+    return PluginOnePlatform.instance.getCard();
   }
 }

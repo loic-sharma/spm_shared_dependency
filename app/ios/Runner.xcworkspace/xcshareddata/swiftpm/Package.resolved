@@ -1,0 +1,15 @@
+{
+  "originHash" : "72280ddd8d56020bbc80ae579e133840e556c88f89fab23b793763aa67938536",
+  "pins" : [
+    {
+      "identity" : "example-package-playingcard",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/example-package-playingcard.git",
+      "state" : {
+        "revision" : "39ddabb01e8102ab548a8c6bb3eb20b15f3b4fbc",
+        "version" : "3.0.5"
+      }
+    }
+  ],
+  "version" : 3
+}

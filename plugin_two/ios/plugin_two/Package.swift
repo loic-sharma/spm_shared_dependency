@@ -11,11 +11,15 @@ let package = Package(
     products: [
         .library(name: "plugin-two", targets: ["plugin_two"])
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/apple/example-package-playingcard.git", from: "3.0.5"),
+    ],
     targets: [
         .target(
             name: "plugin_two",
-            dependencies: [],
+            dependencies: [
+                .product(name: "PlayingCard", package: "example-package-playingcard")
+            ],
             resources: [
                 // If your plugin requires a privacy manifest, for example if it uses any required
                 // reason APIs, update the PrivacyInfo.xcprivacy file to describe your plugin's

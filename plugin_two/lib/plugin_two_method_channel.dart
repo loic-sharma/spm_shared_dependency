@@ -10,8 +10,8 @@ class MethodChannelPluginTwo extends PluginTwoPlatform {
   final methodChannel = const MethodChannel('plugin_two');
 
   @override
-  Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
-    return version;
+  Future<String?> getCard() async {
+    final card = await methodChannel.invokeMethod<String>('getCard');
+    return card;
   }
 }
